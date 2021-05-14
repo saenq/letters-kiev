@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+body {
+    min-width: 320px;
+    // overflow-x: hidden;
+    background-color: #030000;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container {
+    padding: 0 9%;
+}
+
+.page-section {
+    padding: 50px 0;
+    &:first-child {
+        padding-top: 100px;
+    }
+    &:last-child {
+        padding-bottom: 160px;
+    }
+}
+
+.title {
+    margin-bottom: 34px;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: block;
+    width: 370px;
+    text-align: center;
+    color: $color--primary;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    background-color: transparent;
+    border: 6px solid #ffffff;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all .4s;
+    &:hover {
+        box-shadow: inset 0 0 30px 5px $color--primary, 0 0 30px 5px $color--primary;
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+    }
+}
+
+.color--primary {
+    color: $color--primary;
+}
+
+.color--secondary {
+    color: $color--secondary;
+}
